@@ -9,7 +9,7 @@ let questions = [{
     "content": "不，我不饿",
     "option": "B"
   }],
-  "img": "../../resource/question1.png",
+  "img": "../../resource/question1.jpeg",
   "no": 1
 },
 {
@@ -23,7 +23,7 @@ let questions = [{
     "content": "和老板请假叭 ",
     "option": "B"
   }],
-  "img": "../../resource/question2.png",
+  "img": "../../resource/question2.jpeg",
   "no": 2
 },
 {
@@ -37,7 +37,7 @@ let questions = [{
     "content": "都2020了，线上会议它不香吗",
     "option": "B"
   }],
-  "img": "../../resource/question3.png",
+  "img": "../../resource/question3.jpeg",
   "no": 3
 },
 {
@@ -51,7 +51,7 @@ let questions = [{
     "content": "我戴好防护口罩，离他至少一米远",
     "option": "B"
   }],
-  "img": "../../resource/question4.png",
+  "img": "../../resource/question4.jpeg",
   "no": 4
 },
 {
@@ -65,7 +65,7 @@ let questions = [{
     "content": "动动手指官微自助办理",
     "option": "B"
   }],
-  "img": "../../resource/question5.png",
+  "img": "../../resource/question5.jpeg",
   "no": 5
 },
 {
@@ -79,7 +79,7 @@ let questions = [{
     "content": "还是洗手消毒，隔离衣物才保险",
     "option": "B"
   }],
-  "img": "../../resource/question6.png",
+  "img": "../../resource/question6.jpeg",
   "no": 6
 },
 {
@@ -93,7 +93,7 @@ let questions = [{
     "content": "报告社区或物业",
     "option": "B"
   }],
-  "img": "../../resource/question7png",
+  "img": "../../resource/question7.jpeg",
   "no": 7
 },
 {
@@ -107,7 +107,7 @@ let questions = [{
     "content": "听说75%酒精最管用，还是兑点水吧",
     "option": "B"
   }],
-  "img": "../../resource/question8.png",
+  "img": "../../resource/question8.jpeg",
   "no": 8
 },
 {
@@ -121,7 +121,7 @@ let questions = [{
     "content": "先用洁厕灵，再上84消毒水",
     "option": "B"
   }],
-  "img": "../../resource/question9.png",
+  "img": "../../resource/question9.jpeg",
   "no": 9
 },
 {
@@ -135,7 +135,7 @@ let questions = [{
     "content": "先把包裹放阳台晾凉，洗手消毒最重要 ",
     "option": "B"
   }],
-  "img": "../../resource/question10.png",
+  "img": "../../resource/question10.jpeg",
   "no": 10
 },
 {
@@ -149,7 +149,7 @@ let questions = [{
     "content": "还是喜欢毛衣，低调有内涵 ",
     "option": "B"
   }],
-  "img": "../../resource/question11.png",
+  "img": "../../resource/question11.jpeg",
   "no": 11
 },
 {
@@ -163,7 +163,7 @@ let questions = [{
     "content": "太刺鼻了，消停消停吧",
     "option": "B"
   }],
-  "img": "../../resource/question12.png",
+  "img": "../../resource/question12.jpeg",
   "no": 12
 },
 {
@@ -177,7 +177,7 @@ let questions = [{
     "content": "还是买瓶维生素保障免疫力吧 ",
     "option": "B"
   }],
-  "img": "../../resource/question13.png",
+  "img": "../../resource/question13.jpeg",
   "no": 13
 },
 {
@@ -191,7 +191,7 @@ let questions = [{
     "content": "我才不要，我不会感染",
     "option": "B"
   }],
-  "img": "../../resource/question14.png",
+  "img": "../../resource/question14.jpeg",
   "no": 14
 },
 {
@@ -205,7 +205,7 @@ let questions = [{
     "content": "还是用勾兑消毒液洗一洗来得快",
     "option": "B"
   }],
-  "img": "../../resource/question15.png",
+  "img": "../../resource/question15.jpeg",
   "no": 15
 },
 {
@@ -219,7 +219,7 @@ let questions = [{
     "content": "还是宅在家，早睡早起",
     "option": "B"
   }],
-  "img": "../../resource/question16.png",
+  "img": "../../resource/question16.jpeg",
   "no": 16
 },
 {
@@ -233,7 +233,7 @@ let questions = [{
     "content": "多吃抗生素",
     "option": "B"
   }],
-  "img": "../../resource/question17.png",
+  "img": "../../resource/question17.jpeg",
   "no": 17
 },
 {
@@ -247,7 +247,7 @@ let questions = [{
     "content": "一次性医用口罩刚刚好",
     "option": "B"
   }],
-  "img": "../../resource/question18.png",
+  "img": "../../resource/question18.jpeg",
   "no": 18
 },
 {
@@ -261,7 +261,7 @@ let questions = [{
     "content": "挂在洁净干燥通风处，让它也透透气吧",
     "option": "B"
   }],
-  "img": "../../resource/question19.png",
+  "img": "../../resource/question19.jpeg",
   "no": 19
 },
 {
@@ -275,7 +275,7 @@ let questions = [{
     "content": "由内向外折好，丢入红色垃圾桶 ",
     "option": "B"
   }],
-  "img": "../../resource/question20.png",
+  "img": "../../resource/question20.jpeg",
   "no": 20
 }] 
 module.exports = questions
