@@ -1,6 +1,10 @@
 /**index.wxss**/
+
 .container{
-  height: 100%;
+    position: relative;
+}
+.other-widget{
+    position: absolute;
 }
 
 .type-btn{

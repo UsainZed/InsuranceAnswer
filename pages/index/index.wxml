@@ -1,9 +1,13 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
-    <button bindtap="bindSequence" class='type-btn'> 顺序学习 </button>
-    <button bindtap="bindRandom" class='type-btn'> 乱序学习 </button>
-    <button bindtap="bindFavorite" class='type-btn'> 我的收藏 </button>
+ 
+<view class="container">
+    <image class="bgImg" src="../../resource/img001.jpeg"></image>
+    <other-widget class="other-wigdget">
+    <view class="userinfo">
+    <button bindtap="bindSequence" class='type-btn'> 开始战斗 </button>
   </view>
-  <view class='right-footer' bindtap="about">?</view>
+    </other-widget>  
 </view>
+  
+  </view>
