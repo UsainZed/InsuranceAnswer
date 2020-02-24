@@ -1,0 +1,9 @@
+<view class='container'>
+	<view class="content">
+		<image wx:if='{{count==0}}' class="reard_image" src="../../doc/images/one_star.png"></image>
+		<image wx:if='{{count==1}}' class="reard_image" src="../../doc/images/two_star.png"></image>
+		<image wx:if='{{count==2}}' class="reard_image" src="../../doc/images/three_star.png"></image>
+		<image wx:if='{{count==3}}' class="reard_image" src="../../doc/images/four_star.png"></image>
+		<image wx:if='{{count==4}}' class="reard_image" src="../../doc/images/five_star.png"></image>
+	</view>
+</view>

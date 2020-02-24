@@ -1,13 +1,5 @@
 <!--index.wxml-->
+
 <view class="container">
- 
-<view class="container">
-    <image class="bgImg" src="../../resource/img001.jpeg"></image>
-    <other-widget class="other-wigdget">
-    <view class="userinfo">
-    <button bindtap="bindSequence" class='type-btn'> 开始战斗 </button>
-  </view>
-    </other-widget>  
+  <image class="bgImg" src="../../resource/img0001.jpeg"  bindtap="bindSequence"></image>
 </view>
-  
-  </view>
