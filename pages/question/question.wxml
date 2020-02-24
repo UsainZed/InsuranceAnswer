@@ -1,16 +1,64 @@
 <view class="container">
-  <view class="title">第{{question.no}}题</view>
-  <view class="question">{{question.stem}}</view>
-  <view wx:if="{{question.img}}">
-  <image src="{{question.img}}" mode="aspectFit"></image>
-  </view>
-  <view class="options">
-    <view wx:key="option" wx:for="{{question.options}}">
-      <button animation="{{wrongid==item.option? animationData:''}}" type="{{correctid==item.option?'primary':''}}" class="option" bindtap='selectAnswer' data-id="{{item.option}}" disabled='{{disable}}'>{{item.option}}. {{item.content}}</button>
-    </view>
-  </view>
-  <view class="footer">
+	<image class="bgImg" src="../../doc/images/bgImg.png"></image>
+	<view class="top_box">
+		<image class="top_bg_Img" src="../../doc/images/top_bg_img.png"></image>
+		<view class="stat_box">
+			<view class="stat_content">
+				<image src="../../doc/images/immune.png"></image>
+				<view class="row_box row_box_immune">
+					<view class="row row_immune" style='width:{{immuneNum/12*100}}rpx'></view>
+				</view>
+			</view>
+			<view class="stat_content">
+				<image src="../../doc/images/protect.png"></image>
+				<view class="row_box row_box_protect">
+					<view class="row row_protect" style='width:{{protectNum/20*100}}rpx'></view>
+				</view>
+			</view>
+			<view class="stat_content">
+				<image src="../../doc/images/mood.png"></image>
+				<view class="row_box row_box_mood">
+					<view class="row row_mood" style='width:{{moodNum/10*100}}rpx'></view>
+				</view>
+			</view>
+			<view class="stat_content">
+				<image src="../../doc/images/love.png"></image>
+				<view class="row_box row_box_love">
+					<view class="row row_love" style='width:{{loveNum/17*100}}rpx'></view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="body_box">
+		<image wx:if="{{question.img}}" class="body_img" src="{{question.img}}" mode="">
+		</image>
+	</view>
+	<view class="footer_box">
+		<!-- <view class="options">
+      <view wx:key="option" wx:for="{{question.options}}">
+        <button animation="{{wrongid==item.option? animationData:''}}" type="{{correctid==item.option?'primary':''}}" class="option" bindtap='selectAnswer' data-id="{{item.option}}" disabled='{{disable}}'>{{item.option}}. {{item.content}}</button>
+      </view>
+    </view> -->
+		<view class="btn_box" wx:for="{{question.options}}" wx:key='index' bindtap="choseAnswer" data-obj='{{item}}'>
+			<text>{{item.content}}</text>
+			<!-- <image src='{{imgs[index]}}'></image> -->
+		</view>
+	</view>
+
+	<view class="dialog_modal" wx:if="{{showModal}}">
+		<image wx:if='{{showAlchol}}' src="../../doc/images/alcohol.png" mode="widthFix" bindtap="continue"></image>
+		<image wx:if='{{showMask}}' src="../../doc/images/mask.png" mode="widthFix" bindtap="continue"></image>
+		<image wx:if='{{showGoggles}}' src="../../doc/images/goggles.png" mode="widthFix" bindtap="continue"></image>
+		<image wx:if='{{showGlove}}' src="../../doc/images/glove.png" mode="widthFix" bindtap="continue"></image>
+		<image wx:if='{{showImmune}}' src="../../doc/images/immu_reset.png" mode="widthFix" bindtap="resetGame"></image>
+		<image wx:if='{{showProtect}}' src="../../doc/images/pro_reset.png" mode="widthFix" bindtap="resetGame"></image>
+		<image wx:if='{{showMood}}' src="../../doc/images/mood_reset.png" mode="widthFix" bindtap="resetGame"></image>
+		<image wx:if='{{showLove}}' src="../../doc/images/love_reset.png" mode="widthFix" bindtap="resetGame"></image>
+
+	</view>
+
+	<!-- <view class="footer">
     <button id="btnPrevious" class="btn" bindtap='previousQuestion'>上一题</button>
-    <button id="btnNext" class="btn" bindtap='nextQuestion' loading="{{pending}}">下一题</button>
-  </view>
+    <button id="btnNext" class="btn" bindtap='nextQuestion' loading="{{pending}}">下一题 </button>
+  </view> -->
 </view>

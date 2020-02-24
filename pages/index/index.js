@@ -12,31 +12,31 @@ Page({
   //事件处理函数
   bindSequence: function() {
     wx.navigateTo({
-      url: '../question/question?type=sequence'
+      url: '../question/question'
     })
   },
-  bindRandom: function () {
-    wx.navigateTo({
-      url: '../question/question?type=random'
-    })
-  },
-  bindFavorite: function () {
-    let favorite_list = wx.getStorageSync('favorite_list')
-    if (!favorite_list) {
-      wx.showModal({
-        title: 'Oops!',
-        content: '你没有收藏的问题'
-      })
-      return
-    }
-    wx.navigateTo({
-      url: '../question/question?type=favorite'
-    })
-  },
-  about: function(){
-    wx.navigateTo({
-      url: '../about/about'
-    })
-  }
+  // bindRandom: function () {
+  //   wx.navigateTo({
+  //     url: '../question/question?type=random'
+  //   })
+  // },
+  // bindFavorite: function () {
+  //   let favorite_list = wx.getStorageSync('favorite_list')
+  //   if (!favorite_list) {
+  //     wx.showModal({
+  //       title: 'Oops!',
+  //       content: '你没有收藏的问题'
+  //     })
+  //     return
+  //   }
+  //   wx.navigateTo({
+  //     url: '../question/question?type=favorite'
+  //   })
+  // },
+  // about: function(){
+  //   wx.navigateTo({
+  //     url: '../about/about'
+  //   })
+  // }
 
 })

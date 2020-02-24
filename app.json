@@ -1,11 +1,13 @@
 {
   "pages": [
+    "pages/result/result",
     "pages/index/index",
-    "pages/question/question",
-    "pages/about/about"
+    "pages/about/about",
+    "pages/question/question"
   ],
   "window": {
     "backgroundTextStyle": "light",
+    "navigationStyle": "custom",
     "navigationBarBackgroundColor": "#2E4A62",
     "navigationBarTitleText": "小华战疫记",
     "navigationBarTextStyle": "white"
