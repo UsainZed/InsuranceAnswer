@@ -13,7 +13,7 @@ let questions = [{
       loveNum: 1,
       moodNum: 2,
     }],
-    img: "../../resource/01.jpeg",
+  img: "https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/5/1.png",
   },
   {
     stem: "药店酒精都卖光了，我可怎么办。咦，老舅年前带了一瓶96伏特加",
@@ -32,7 +32,7 @@ let questions = [{
         moodNum: -1,
       }
     ],
-    img: "../../resource/02.jpeg",
+    img: "https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/5/2.png",
   },
   {
     stem: "有一个紧急多人现场会议需要召开，怎么办",
@@ -51,7 +51,7 @@ let questions = [{
         moodNum: -1,
       }
     ],
-    img: "../../resource/03.jpeg",
+    img: "https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/5/3.png",
   },
   {
     stem: "我旁边的同事出现了咳嗽症状，该怎么办",
@@ -70,7 +70,7 @@ let questions = [{
         moodNum: 0,
       }
     ],
-    img: "../../resource/04.png",
+    img: "https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/5/4.png",
   }, {
     stem: "疫情期间，若想要办理华夏保险承保、保全等业务",
     options: [{
@@ -88,7 +88,7 @@ let questions = [{
         moodNum: 3,
       }
     ],
-    img: "../../resource/05.png",
+    img: "https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/5/5.png",
   }, {
     stem: "为了增强抵抗病毒的免疫力",
     options: [{
@@ -106,7 +106,7 @@ let questions = [{
         moodNum: 0,
       }
     ],
-    img: "../../resource/06.png",
+    img: "https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/5/6.png",
   }, {
     stem: "快看前面有辆湖北车",
     options: [{
@@ -124,7 +124,7 @@ let questions = [{
         moodNum: 0,
       }
     ],
-    img: "../../resource/07.png",
+    img: "https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/5/7.png",
   }, {
     stem: "早上测量体温超 37.5 度，但自我感觉良好，糟糕了，上班快迟到了",
     options: [{
@@ -142,7 +142,7 @@ let questions = [{
         moodNum: 2,
       }
     ],
-    img: "../../resource/08.png",
+    img: "https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/5/8.png",
   }, {
     stem: "钟老说了，病毒可能通过粪口传播，来给马桶也消消毒吧",
     options: [{
@@ -160,7 +160,7 @@ let questions = [{
         moodNum: 0,
       }
     ],
-    img: "../../resource/09.png",
+    img: "https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/5/9.png",
   }, {
     stem: "我太南了，口罩都变形了",
     options: [{
@@ -178,7 +178,7 @@ let questions = [{
         moodNum: 0,
       }
     ],
-    img: "../../resource/10.png",
+    img: "https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/5/10.png",
   }, {
     stem: "天气真好，我要出去透透气",
     options: [{
@@ -196,7 +196,7 @@ let questions = [{
         moodNum: 2,
       }
     ],
-    img: "../../resource/11.png",
+    img: "https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/5/11.png",
   }, {
     stem: "前面这盘野味看起来好美味啊，口水都在流了，你会__",
     options: [{
@@ -214,7 +214,7 @@ let questions = [{
         moodNum: -1,
       }
     ],
-    img: "../../resource/12.png",
+    img: "https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/5/12.png",
   }, {
     stem: "这家药店居然还有这么多双黄连",
     options: [{
@@ -232,7 +232,7 @@ let questions = [{
         moodNum: 2,
       }
     ],
-    img: "../../resource/13.png",
+    img: "https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/5/13.png",
   }, {
     stem: "听说华夏保险推出了针对新冠的守护保保险计划",
     options: [{
@@ -250,7 +250,7 @@ let questions = [{
         moodNum: -1,
       }
     ],
-    img: "../../resource/14.png",
+    img: "https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/5/14.png",
   }, {
     stem: "李兰娟院士说56°C持续30分钟可以杀毒，那我来给衣服消消毒",
     options: [{
@@ -268,7 +268,7 @@ let questions = [{
         moodNum: 0,
       }
     ],
-    img: "../../resource/15.png",
+    img: "https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/5/15.png",
   }, {
     stem: "疫情期间为了保持健康的生活状态",
     options: [{
@@ -286,7 +286,7 @@ let questions = [{
         moodNum: 2,
       }
     ],
-    img: "../../resource/16.png",
+    img: "https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/5/16.png",
   }, {
     stem: "复工返程好累呀，到家了先来个葛优躺",
     options: [{
@@ -304,7 +304,7 @@ let questions = [{
         moodNum: -1,
       }
     ],
-    img: "../../resource/17.png",
+    img: "https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/5/17.png",
   }, {
     stem: "准备些口罩上班用",
     options: [{
@@ -322,7 +322,7 @@ let questions = [{
         moodNum: 0,
       }
     ],
-    img: "../../resource/18.png",
+    img: "https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/5/18.png",
   }, {
     stem: "口罩稀缺就像国宝，如需重复使用",
     options: [{
@@ -340,7 +340,7 @@ let questions = [{
         moodNum: 0,
       }
     ],
-    img: "../../resource/19.png",
+    img: "https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/5/19.png",
   },
   //  {
   //   stem: "盼星星，盼月亮，新买的大衣终于寄到手了",
@@ -378,7 +378,7 @@ let questions = [{
         moodNum: 2,
       }
     ],
-    img: "../../resource/20.png",
+    img: "https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/5/20.png",
   }
 ]
 module.exports = questions

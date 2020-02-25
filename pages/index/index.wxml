@@ -1,5 +1,4 @@
-<!--index.wxml-->
 
 <view class="container">
-  <image class="bgImg" src="../../resource/img0001.jpeg"  bindtap="bindSequence"></image>
+  <image class="bgImg" src="https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/1/shouye.jpg"  bindtap="bindSequence"></image>
 </view>

@@ -190,18 +190,3 @@
   color: #fff;
   text-align: center;
 }
-
-/* .btn {
-  background-color: #2e4a62;
-  border: 1rpx solid #2e4a62;
-  color: #f0ede5;
-  width: 300rpx;
-  height: 100rpx;
-  line-height: 100rpx;
-} */
-
-/* 去除button的边框 */
-
-/* .btn::after {
-  border: none;
-} */

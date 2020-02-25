@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/result/result",
     "pages/index/index",
+    "pages/result/result",
     "pages/about/about",
     "pages/question/question"
   ],
