@@ -84,6 +84,17 @@ Page({
     })
   },
   choseAnswer(e) {
+    const innerAudioContext = wx.createInnerAudioContext()
+    innerAudioContext.autoplay = true
+    innerAudioContext.src = 'https://pic.ibaotu.com/00/51/54/00a888piCGjs.mp3'
+    innerAudioContext.onPlay(() => {
+      console.log('开始播放')
+    })
+    innerAudioContext.onError((res) => {
+      console.log(res.errMsg)
+      console.log(res.errCode)
+    })
+    
     let totalNum = this.data.count
     let obj = e.currentTarget.dataset.obj;
     let immuneNum, protectNum, loveNum, moodNum;

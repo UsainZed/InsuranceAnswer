@@ -2,7 +2,6 @@
   "pages": [
     "pages/index/index",
     "pages/result/result",
-    "pages/about/about",
     "pages/question/question"
   ],
   "window": {
