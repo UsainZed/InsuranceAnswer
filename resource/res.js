@@ -6,14 +6,17 @@ let questions = [{
       protectNum: -1,
       loveNum: -1,
       moodNum: -1,
+      imageUrl: '../../doc/images/1.1.png'
+
     }, {
       content: "太刺鼻了，消停消停吧",
       immuneNum: 1,
       protectNum: 1,
       loveNum: 1,
       moodNum: 2,
+      imageUrl: '../../doc/images/1.1.png'
     }],
-  img: "https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/5/1.png",
+    img: "https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/5/1.png",
   },
   {
     stem: "药店酒精都卖光了，我可怎么办。咦，老舅年前带了一瓶96伏特加",
@@ -42,6 +45,7 @@ let questions = [{
         protectNum: 1,
         loveNum: -1,
         moodNum: 2,
+        imageUrl: '../doc/images/1.1.png'
       },
       {
         content: "都2020了，线上会议它不香吗",
@@ -49,6 +53,7 @@ let questions = [{
         protectNum: 1,
         loveNum: 1,
         moodNum: -1,
+        imageUrl: '../doc/images/1.1.png'
       }
     ],
     img: "https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/5/3.png",

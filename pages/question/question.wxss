@@ -160,33 +160,19 @@
 
 .footer_box {
   display: flex;
-  padding: 0 62rpx;
   flex-direction: column;
   align-items: center;
   padding-bottom: 30rpx;
 }
 
 .btn_box {
-  display: flex;
-  justify-content: center;
+  width: 668rpx;
+  height: 76rpx;
+}
+.btn_box image{
   width: 100%;
-  background: rgb(83, 172, 149);
-  align-items: center;
-  position: relative;
-  border-radius: 38rpx;
-  box-shadow: 0 10rpx 30rpx rgba(83, 172, 149, 0.6);
 }
 
 .btn_box:last-child {
   margin-top: 38rpx;
-  background: rgb(228, 106, 145);
-  box-shadow: 0 10rpx 30rpx rgba(228, 106, 145, 0.5);
-
-}
-
-
-.btn_box text {
-  padding: 20rpx;
-  color: #fff;
-  text-align: center;
 }

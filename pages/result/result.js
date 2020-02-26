@@ -5,15 +5,24 @@ Page({
    * 页面的初始数据
    */
   data: {
-    count: null
+    count: null,
+    avatarUrl: ""
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    wx.getUserInfo({
+      success: function (res) {
+        console.log(res)
+      },
+      complete:(function(res){
+        console.log(res)
+      })
+    })
     this.setData({
-      count: Number(options.count) || 4
+      count: Number(options.count) || 3
     })
   },
 

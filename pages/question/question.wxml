@@ -35,7 +35,7 @@
 	</view>
 	<view class="footer_box">
 		<view class="btn_box" wx:for="{{question.options}}" wx:key='index' bindtap="choseAnswer" data-obj='{{item}}'>
-			<text>{{item.content}}</text>
+			<image src="{{item.imageUrl}}" mode="widthFix"></image>
 		</view>
 	</view>
 
