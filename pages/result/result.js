@@ -1,4 +1,5 @@
 // pages/result/result.js
+const app = getApp()
 Page({
 
   /**
@@ -6,18 +7,36 @@ Page({
    */
   data: {
     count: null,
-    avatarUrl: ""
+    avatarUrl: "",
+    images: [
+      'https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/4/yixing.png',
+      'https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/4/erxing.png',
+      'https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/4/sanxing.png',
+      'https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/4/sixing.png',
+      'https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/4/wuxing.png'
+    ],
+    currentImage: ''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var that = this
+    wx.getUserInfo({
+      success: function (res) {
+        if (res && res.userInfo) {
+          that.setData({
+            avatarUrl: res.userInfo.avatarUrl
+          })
+        }
+      }
+    })
     this.setData({
-      count: Number(options.count) || 3
+      count: Number(options.count) || 3,
+      currentImage: that.data.images[Number(options.count)]
     })
   },
-
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
