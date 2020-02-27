@@ -57,7 +57,6 @@ Page({
   },
   nextQuestion: function () {
     if (questioncontrol.finishedYet()) {
-      console.log(this.data.count)
       let that = this
       wx.redirectTo({
         url: '../result/result?count=' + that.data.count,
@@ -94,7 +93,7 @@ Page({
       console.log(res.errMsg)
       console.log(res.errCode)
     })
-    
+
     let totalNum = this.data.count
     let obj = e.currentTarget.dataset.obj;
     let immuneNum, protectNum, loveNum, moodNum;
@@ -106,80 +105,93 @@ Page({
     if (currentMoodNum > 0 && currentLoveNum > 0 && currentProtectNum > 0 && currentImmuneNum > 0) {
       conutine = true
     }
-    console.log(conutine)
-    if (this.data.immuneNum == 12) {
-      immuneNum = 12
-    } else {
-      immuneNum = this.data.immuneNum + obj.immuneNum
-      if (immuneNum >= 12 && conutine) {
+    if (conutine) {
+      if (this.data.immuneNum == 12) {
         immuneNum = 12
-        this.setData({
-          showModal: true,
-          showAlchol: true,
-          count: totalNum + 1
-        })
+      } else {
+        immuneNum = this.data.immuneNum + obj.immuneNum
+        if (immuneNum >= 12) {
+          immuneNum = 12
+          this.setData({
+            showModal: true,
+            showAlchol: true,
+            count: totalNum + 1
+          })
+        }
       }
-      if (immuneNum <= 0) {
+      if (this.data.protectNum == 20) {
+        protectNum = 20
+      } else {
+        protectNum = this.data.protectNum + obj.protectNum
+        if (protectNum >= 20) {
+          protectNum = 20
+          this.setData({
+            showModal: true,
+            showMask: true,
+            count: totalNum + 1
+          })
+        }
+
+      }
+      if (this.data.loveNum == 17) {
+        loveNum = 17
+      } else {
+        loveNum = this.data.loveNum + obj.loveNum
+        if (loveNum >= 17) {
+          loveNum = 17
+          this.setData({
+            showModal: true,
+            showGlove: true,
+            count: totalNum + 1
+          })
+        }
+
+      }
+      if (this.data.moodNum == 10) {
+        moodNum = 10
+      } else {
+        moodNum = this.data.moodNum + obj.moodNum
+        if (moodNum >= 10) {
+          moodNum = 10
+          this.setData({
+            showModal: true,
+            showGoggles: true,
+            count: totalNum + 1
+          })
+        }
+      }
+      if (immuneNum > 0 && protectNum > 0 && loveNum > 0 && moodNum > 0) {
+        this.setData({
+          immuneNum: immuneNum,
+          protectNum: protectNum,
+          loveNum: loveNum,
+          moodNum: moodNum
+        })
+        if (!this.data.showAlchol && !this.data.showGlove && !this.data.showGoggles && !this.data.showMask) {
+          this.nextQuestion()
+        }
+      }
+    } else {
+      if (currentImmuneNum <= 0) {
         this.setData({
           showModal: true,
           showImmune: true,
           immuneNum: 0
         })
-      }
-    }
-    if (this.data.protectNum == 20) {
-      protectNum = 20
-    } else {
-      protectNum = this.data.protectNum + obj.protectNum
-      if (protectNum >= 20 && conutine) {
-        protectNum = 20
-        this.setData({
-          showModal: true,
-          showMask: true,
-          count: totalNum + 1
-        })
-      }
-      if (protectNum <= 0) {
+        return
+      } else if (currentProtectNum <= 0) {
         this.setData({
           showModal: true,
           showProtect: true,
           protectNum: 0
         })
-      }
-    }
-    if (this.data.loveNum == 17) {
-      loveNum = 17
-    } else {
-      loveNum = this.data.loveNum + obj.loveNum
-      if (loveNum >= 17 && conutine) {
-        loveNum = 17
-        this.setData({
-          showModal: true,
-          showGlove: true,
-          count: totalNum + 1
-        })
-      }
-      if (loveNum <= 0) {
+      } else if (currentLoveNum <= 0) {
         this.setData({
           showModal: true,
           showLove: true,
           loveNum: 0
         })
-      }
-    }
-    if (this.data.moodNum == 10) {
-      moodNum = 10
-    } else {
-      moodNum = this.data.moodNum + obj.moodNum
-      if (moodNum >= 10 && conutine) {
-        moodNum = 10
-        this.setData({
-          showModal: true,
-          showGoggles: true,
-          count: totalNum + 1
-        })
-      }
-      if (moodNum <= 0) {
+      } else if (currentMoodNum <= 0) {
         this.setData({
           showModal: true,
           showMood: true,
@@ -187,17 +199,7 @@ Page({
         })
       }
     }
-    if (immuneNum > 0 && protectNum > 0 && loveNum > 0 && moodNum > 0) {
-      this.setData({
-        immuneNum: immuneNum,
-        protectNum: protectNum,
-        loveNum: loveNum,
-        moodNum: moodNum
-      })
-      if (!this.data.showAlchol && !this.data.showGlove && !this.data.showGoggles && !this.data.showMask) {
-        this.nextQuestion()
-      }
-    }
+
   },
   resetGame() {
     wx.redirectTo({
@@ -250,8 +252,7 @@ Page({
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () {
-  },
+  onShow: function () {},
 
   /**
    * 生命周期函数--监听页面隐藏
