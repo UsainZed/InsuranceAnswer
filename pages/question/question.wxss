@@ -144,8 +144,8 @@
 }
 
 .dialog_modal image {
-  width: 620rpx;
-  margin-top: 120rpx;
+  width: 100%;
+  margin-top: 85rpx;
 }
 
 .icon {
