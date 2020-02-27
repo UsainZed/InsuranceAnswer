@@ -1,7 +1,7 @@
 <view class="container">
 	<image class="bgImg" src="https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/6/beijing.png"></image>
 	<view class="top_box">
-		<image class="top_bg_Img" src="../../doc/images/bgImg.png"></image>
+		<image class="top_bg_Img" src="../../doc/images/bgImg.png" mode='widthFix'></image>
 		<!-- <image class="top_bg_Img" src="https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/6/dinbu.png"></image> -->
 		<view class="stat_box">
 			<view class="stat_content">

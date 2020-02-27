@@ -1,6 +1,7 @@
-<view class='container'>
+<view class='container' bindlongtap='saveImage'>
 	<view class="avatar_box">
-		<open-data class='avatar' type="userAvatarUrl"></open-data>
+		<image class="avatar" wx:if='{{avatarUrl.length}}'></image>
+		<open-data class='avatar' type="userAvatarUrl" v-else></open-data>
 	</view>
 	<view class="content">
 		<image wx:if='{{count==0}}' class="reard_image" src="https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/4/yixing.png"></image>
