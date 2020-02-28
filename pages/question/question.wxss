@@ -30,10 +30,10 @@
 }
 
 .top_bg_Img {
-  position: fixed;
+  position: absolute;
   width: 684rpx;
-  top: 44rpx;
-  z-index: -4;
+  top: 0;
+  z-index: -20;
 }
 
 .stat_box {
@@ -44,7 +44,7 @@
 
 .stat_content {
   width: 100rpx;
-  margin-top: 10rpx;
+  margin-top: 13rpx;
   display: flex;
   justify-content: center;
   position: relative;
