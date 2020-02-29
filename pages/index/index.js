@@ -9,6 +9,15 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+
+  },
+
+
   //事件处理函数
   bindSequence: function() {
     const innerAudioContext = wx.createInnerAudioContext()

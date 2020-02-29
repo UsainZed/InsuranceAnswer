@@ -48,10 +48,16 @@
 		<image wx:if='{{showMask}}' src="https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/2/kouzhao.png" mode="widthFix" bindtap="continue"></image>
 		<image wx:if='{{showGoggles}}' src="https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/2/humujing.png" mode="widthFix" bindtap="continue"></image>
 		<image wx:if='{{showGlove}}' src="https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/2/shoutao.png" mode="widthFix" bindtap="continue"></image>
-		<image wx:if='{{showImmune}}' src="https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/3/mianyi0.png" mode="widthFix" bindtap="resetGame"></image>
+		<!-- <image wx:if='{{showImmune}}' src="https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/3/mianyi0.png" mode="widthFix" bindtap="resetGame"></image>
 		<image wx:if='{{showProtect}}' src="https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/3/fanghu0.png" mode="widthFix" bindtap="resetGame"></image>
 		<image wx:if='{{showMood}}' src="https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/3/xinqing0.png" mode="widthFix" bindtap="resetGame"></image>
-		<image wx:if='{{showLove}}' src="https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/3/aixin0.png" mode="widthFix" bindtap="resetGame"></image>
+		<image wx:if='{{showLove}}' src="https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/3/aixin0.png" mode="widthFix" bindtap="resetGame"></image> -->
+
+
+    	<image wx:if='{{showImmune}}' src="../../doc/images/mianyi0.png" mode="widthFix" bindtap="resetGame"></image>
+		<image wx:if='{{showProtect}}' src="../../doc/images/fanghu0.png" mode="widthFix" bindtap="resetGame"></image>
+		<image wx:if='{{showMood}}' src="../../doc/images/xinqing0.png" mode="widthFix" bindtap="resetGame"></image>
+		<image wx:if='{{showLove}}' src="../../doc/images/aixin0.png" mode="widthFix" bindtap="resetGame"></image>
 
 	</view>
 </view>
