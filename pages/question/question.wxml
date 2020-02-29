@@ -14,21 +14,21 @@
 			<view class="stat_content">
 				<image class="image" src="https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/6/fanghu.png"></image>
 				<view class="row_box row_box_protect">
-					<view class="row row_protect" style='width:{{protectNum/20*100}}rpx'></view>
+					<view class="row row_protect" style='width:{{protectNum/18*100}}rpx'></view>
 				</view>
 				<image class="desc_icon" src="../../doc/images/protect.png"></image>
 			</view>
 			<view class="stat_content">
 				<image class="image" src="https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/6/xinqing.png"></image>
 				<view class="row_box row_box_mood">
-					<view class="row row_mood" style='width:{{moodNum/10*100}}rpx'></view>
+					<view class="row row_mood" style='width:{{moodNum/9*100}}rpx'></view>
 				</view>
 				<image class="desc_icon" src="../../doc/images/mood.png"></image>
 			</view>
 			<view class="stat_content">
 				<image class="image" src="https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/6/aixin.png"></image>
 				<view class="row_box row_box_love">
-					<view class="row row_love" style='width:{{loveNum/17*100}}rpx'></view>
+					<view class="row row_love" style='width:{{loveNum/15*100}}rpx'></view>
 				</view>
 				<image class="desc_icon" src="../../doc/images/love.png"></image>
 			</view>
