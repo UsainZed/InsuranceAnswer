@@ -9,11 +9,11 @@ Page({
     count: null,
     avatarUrl: "",
     images: [
-      'https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/4/yixing.png',
-      'https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/4/erxing.png',
-      'https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/4/sanxing.png',
-      'https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/4/sixing.png',
-      'https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/4/wuxing.png'
+      '../../doc/images/yixing.png',
+      '../../doc/images/erxing.png',
+      '../../doc/images/sanxing.png',
+      '../../doc/images/sixing.png',
+      '../../doc/images/wuxing.png'
     ],
     currentImage: ''
   },
