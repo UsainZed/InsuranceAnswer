@@ -119,12 +119,12 @@ Page({
           })
         }
       }
-      if (this.data.protectNum == 20) {
-        protectNum = 20
+      if (this.data.protectNum == 18) {
+        protectNum = 18
       } else {
         protectNum = this.data.protectNum + obj.protectNum
-        if (protectNum >= 20) {
-          protectNum = 20
+        if (protectNum >= 18) {
+          protectNum = 18
           this.setData({
             showModal: true,
             showMask: true,
@@ -133,12 +133,12 @@ Page({
         }
 
       }
-      if (this.data.loveNum == 17) {
-        loveNum = 17
+      if (this.data.loveNum == 15) {
+        loveNum = 15
       } else {
         loveNum = this.data.loveNum + obj.loveNum
-        if (loveNum >= 17) {
-          loveNum = 17
+        if (loveNum >= 15) {
+          loveNum = 15
           this.setData({
             showModal: true,
             showGlove: true,
@@ -147,12 +147,12 @@ Page({
         }
 
       }
-      if (this.data.moodNum == 10) {
-        moodNum = 10
+      if (this.data.moodNum == 9) {
+        moodNum = 9
       } else {
         moodNum = this.data.moodNum + obj.moodNum
-        if (moodNum >= 10) {
-          moodNum = 10
+        if (moodNum >= 9) {
+          moodNum = 9
           this.setData({
             showModal: true,
             showGoggles: true,
