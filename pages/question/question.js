@@ -14,6 +14,7 @@ Page({
       '../../doc/images/chose_one.png',
       '../../doc/images/chose_two.png'
     ],
+    answer:'',
     immuneNum: 2,
     protectNum: 2,
     loveNum: 2,
@@ -74,7 +75,6 @@ Page({
   setNewQuestion: function (question, favorite) {
     this.setData({
       question: question,
-      answer: question.answer,
       favorite: favorite,
       correctid: '',
       wrongid: '',
@@ -87,7 +87,7 @@ Page({
     innerAudioContext.autoplay = true
     innerAudioContext.src = 'https://pic.ibaotu.com/00/51/54/00a888piCGjs.mp3'
     innerAudioContext.onPlay(() => {
-      console.log('开始播放')
+      // console.log('开始播放')
     })
     innerAudioContext.onError((res) => {
       console.log(res.errMsg)
@@ -216,25 +216,24 @@ Page({
     })
     this.nextQuestion()
   },
-  selectAnswer: function (evt) {
-    self = this
-    let selected = evt.currentTarget.dataset.id
-    let act = this.data.answer
-    if (selected == act) {
-      this.setData({
-        correctid: selected,
-        disable: 'disabled',
-        pending: true
-      })
-      setTimeout(function () {
-        self.nextQuestion()
-      }, 1000)
-    } else {
-      this.setData({
-        wrongid: selected
-      })
-    }
-  },
+  //   self = this
+  //   let selected = evt.currentTarget.dataset.id
+  //   let act = this.data.answer
+  //   if (selected == act) {
+  //     this.setData({
+  //       correctid: selected,
+  //       disable: 'disabled',
+  //       pending: true
+  //     })
+  //     setTimeout(function () {
+  //       self.nextQuestion()
+  //     }, 1000)
+  //   } else {
+  //     this.setData({
+  //       wrongid: selected
+  //     })
+  //   }
+  // },
   addFavorite: function () {
     let isFavorite = questioncontrol.toggleFavorite()
     this.setData({
