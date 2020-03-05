@@ -1,4 +1,4 @@
 
 <view class="container">
-  <image class="bgImg" src="https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/1/shouye.png"  bindtap="bindSequence"></image>
+  <image class="bgImg" src="../../doc/images/shouye.png"  bindtap="bindSequence"></image>
 </view>

@@ -7,7 +7,7 @@ let questions = [
       protectNum: 0,
       loveNum: 0,
       moodNum: 3,
-      imageUrl: 'https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/7/6.1.png'
+      imageUrl: '../../doc/images/6.1.png'
     },
     {
       content: "多吃抗生素",
@@ -15,10 +15,10 @@ let questions = [
       protectNum: 0,
       loveNum: 0,
       moodNum: 0,
-      imageUrl: 'https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/7/6.2.png'
+      imageUrl: '../../doc/images/6.2.png'
     }
     ],
-    img: "https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/5/6.png",
+    img: "../../doc/images/6.png",
   },
   {
     stem: "药店酒精都卖光了，我可怎么办。咦，老舅年前带了一瓶96伏特加",
@@ -39,7 +39,7 @@ let questions = [
       imageUrl: 'https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/7/2.2.png'
     }
     ],
-    img: "https://reportzhej.hualife.cc:8443/zjhx-reports/views/images/yinbao/5/2.png",
+    img: "../../doc/images/2.png",
   },
   {
     stem: "有一个紧急多人现场会议需要召开，怎么办",
